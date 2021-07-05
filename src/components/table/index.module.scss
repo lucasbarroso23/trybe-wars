@@ -1,0 +1,123 @@
+.table {
+  padding: 1rem;
+  background-color: aquamarine;
+
+  background: linear-gradient(90deg, #49a09d, #5f2c82);
+  font-family: sans-serif;
+  font-weight: 100;
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+
+  overflow: auto;
+
+  header {
+    height: 12vh;
+    width: 100%;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .activeFilters {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: start;
+    padding-top: 4rem;
+
+    .filterPills {
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+      div {
+        width: auto;
+        height: 2rem;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        margin-right: 1rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        h3,
+        h4 {
+          margin-right: 1rem;
+        }
+
+        button {
+          background-color: rgb(235, 58, 58);
+          font-size: 12px;
+          font-weight: bold;
+          color: #fff;
+          height: 1.5rem;
+          width: 1.5rem;
+          border-radius: 50%;
+          border: none;
+
+          &:hover {
+            background-color: rgba(235, 58, 58, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    th,
+    td {
+      padding: 15px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      max-width: 6.5rem;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    thead {
+      th {
+        background-color: #55608f;
+      }
+    }
+
+    tbody {
+      tr {
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  }
+}
